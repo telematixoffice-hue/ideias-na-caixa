@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kits de Homenagem | Idéias na Caixa</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .kit-page{
+            padding-top:120px;
+        }
+
+        .kit-hero{
+            background:linear-gradient(135deg,#0f172a,#1e3a5f);
+            color:white;
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .kit-hero h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        .kit-hero p{
+            max-width:700px;
+            margin:auto;
+        }
+
+        .kit-container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:80px 0;
+        }
+
+        .voltar{
+            margin-bottom:30px;
+        }
+
+        .galeria{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:25px;
+            margin-bottom:50px;
+        }
+
+        .galeria img{
+            width:100%;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.10);
+            transition:.3s;
+        }
+
+        .galeria img:hover{
+            transform:translateY(-5px);
+        }
+
+        .descricao{
+            background:#fff;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.08);
+        }
+
+        .descricao h2{
+            color:#0f172a;
+            margin-bottom:20px;
+        }
+
+        .descricao p{
+            margin-bottom:15px;
+        }
+
+        .beneficios{
+            margin-top:25px;
+        }
+
+        .beneficios ul{
+            padding-left:20px;
+        }
+
+        .beneficios li{
+            margin-bottom:10px;
+        }
+
+        .cta-kit{
+            text-align:center;
+            margin-top:40px;
+        }
+
+        .cta-kit .btn-primary{
+            padding:16px 35px;
+        }
+
+        footer{
+            margin-top:60px;
+        }
+
+        @media(max-width:768px){
+
+            .kit-hero h1{
+                font-size:2.2rem;
+            }
+
+            .galeria{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="../index.html" class="logo">
+            <img src="../Imagens/logo.png" alt="Idéias na Caixa">
+        </a>
+
+    </div>
+
+</header>
+
+<section class="kit-page">
+
+    <div class="kit-hero">
+
+        <h1>Kits de Homenagem</h1>
+
+        <p>
+            Reconheça histórias, conquistas e pessoas especiais com uma homenagem elegante, personalizada e memorável.
+        </p>
+
+    </div>
+
+    <div class="kit-container">
+
+        <a href="../index.html" class="btn-primary voltar">
+            ← Voltar ao Site
+        </a>
+
+        <div class="galeria">
+
+            <img src="homenagens-1.jpeg" alt="Kit Homenagem">
+
+            <img src="homenagens-2.jpeg" alt="Kit Homenagem">
+
+            <img src="homenagens-3.jpeg" alt="Kit Homenagem">
+
+        </div>
+
+        <div class="descricao">
+
+            <h2>Sobre o Kit</h2>
+
+            <p>
+                Os Kits de Homenagem foram desenvolvidos para tornar momentos especiais ainda mais significativos.
+            </p>
+
+            <p>
+                São ideais para reconhecer colaboradores, homenagear profissionais, celebrar aniversários de empresa,
+                aposentadorias, conquistas e datas comemorativas importantes.
+            </p>
+
+            <p>
+                Cada kit pode ser totalmente personalizado com mensagens exclusivas, brindes corporativos,
+                placas comemorativas, troféus, cartões e itens especiais que reforçam a valorização das pessoas.
+            </p>
+
+            <div class="beneficios">
+
+                <h3>Benefícios</h3>
+
+                <ul>
+                    <li>Fortalece a cultura de reconhecimento;</li>
+                    <li>Gera impacto emocional positivo;</li>
+                    <li>Valoriza colaboradores e parceiros;</li>
+                    <li>Personalização completa com a identidade da empresa;</li>
+                    <li>Ideal para ações de RH e endomarketing.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="cta-kit">
+
+            <a
+                href="https://wa.me/553192352700?text=Olá! Tenho interesse nos Kits de Homenagem e gostaria de solicitar um orçamento."
+                target="_blank"
+                class="btn-primary">
+
+                Solicitar Orçamento
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Idéias na Caixa - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

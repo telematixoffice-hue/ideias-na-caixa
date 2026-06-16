@@ -1,0 +1,542 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d4a53a;
+}
+
+.menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.btn-header {
+    background: #d4a53a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    transform: translateY(-2px);
+    background: #c49427;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    padding: 160px 0 80px;
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    color: white;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-text span {
+    color: #d4a53a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn-primary,
+.btn-secondary,
+.btn-card {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary,
+.btn-card {
+    background: #d4a53a;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-card:hover {
+    background: #c49427;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #1e3a5f;
+}
+
+/* ===========================
+   SEÇÕES
+=========================== */
+
+section {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #d4a53a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin-top: 15px;
+    font-size: 2.5rem;
+    color: #1f2937;
+}
+
+/* ===========================
+   SOBRE
+=========================== */
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   CATÁLOGO
+=========================== */
+
+.kits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.kit-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.kit-card:hover {
+    transform: translateY(-8px);
+}
+
+.kit-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.kit-info {
+    padding: 25px;
+}
+
+.kit-info h3 {
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.kit-info p {
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   GALERIA
+=========================== */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   FORMULÁRIO
+=========================== */
+
+.formulario {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.formulario form {
+    display: grid;
+    gap: 20px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.formulario button {
+    border: none;
+    cursor: pointer;
+}
+
+/* ===========================
+   CONTATO
+=========================== */
+
+.contato-info {
+    text-align: center;
+}
+
+.contato-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   RODAPÉ
+=========================== */
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   WHATSAPP FLUTUANTE
+=========================== */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+/* ==========================
+   SLIDER
+========================== */
+
+.slider-section {
+    padding: 80px 20px;
+    background: #f8fafc;
+}
+
+.slider-container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.slide {
+    display: none;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.slide.active {
+    display: flex;
+}
+
+.slide img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+.slide-content {
+    flex: 1;
+}
+
+.slide-content span {
+    color: #0f172a;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.slide-content h2 {
+    margin: 15px 0;
+    font-size: 2.5rem;
+    color: #0f172a;
+}
+
+.slide-content p {
+    margin-bottom: 30px;
+    color: #64748b;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #cbd5e1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #0f172a;
+}
+
+@media (max-width: 768px) {
+
+    .slide {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .slide img {
+        width: 100%;
+    }
+
+    .slide-content h2 {
+        font-size: 2rem;
+    }
+
+}

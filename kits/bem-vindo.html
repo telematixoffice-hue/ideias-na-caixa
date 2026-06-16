@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kit Boas-Vindas | Idéias na Caixa</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .kit-page{
+            padding-top:120px;
+        }
+
+        .kit-hero{
+            background:linear-gradient(135deg,#0f172a,#1e3a5f);
+            color:white;
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .kit-hero h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        .kit-hero p{
+            max-width:700px;
+            margin:auto;
+        }
+
+        .kit-container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:80px 0;
+        }
+
+        .voltar{
+            margin-bottom:30px;
+        }
+
+        .galeria{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+            gap:25px;
+            margin-bottom:50px;
+        }
+
+        .galeria img{
+            width:100%;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.10);
+            transition:.3s;
+        }
+
+        .galeria img:hover{
+            transform:translateY(-5px);
+        }
+
+        .descricao{
+            background:#fff;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.08);
+        }
+
+        .descricao h2{
+            color:#0f172a;
+            margin-bottom:20px;
+        }
+
+        .descricao p{
+            margin-bottom:15px;
+        }
+
+        .cta-kit{
+            text-align:center;
+            margin-top:40px;
+        }
+
+        .cta-kit .btn-primary{
+            padding:16px 35px;
+        }
+
+        footer{
+            margin-top:60px;
+        }
+
+        @media(max-width:768px){
+
+            .kit-hero h1{
+                font-size:2.2rem;
+            }
+
+            .galeria{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="../index.html" class="logo">
+            <img src="../Imagens/logo.png" alt="Idéias na Caixa">
+        </a>
+
+    </div>
+
+</header>
+
+<section class="kit-page">
+
+    <div class="kit-hero">
+
+        <h1>Kit Boas-Vindas</h1>
+
+        <p>
+            Encante novos colaboradores desde o primeiro dia e fortaleça
+            a cultura da sua empresa com uma recepção memorável.
+        </p>
+
+    </div>
+
+    <div class="kit-container">
+
+        <a href="../index.html" class="btn-primary voltar">
+            ← Voltar ao Site
+        </a>
+
+        <div class="galeria">
+
+            <img src="boas-vindas-1.jpeg" alt="Kit Boas-Vindas">
+
+            <img src="boas-vindas-2.jpeg" alt="Kit Boas-Vindas">
+
+        </div>
+
+        <div class="descricao">
+
+            <h2>Sobre o Kit</h2>
+
+            <p>
+                O Kit Boas-Vindas foi desenvolvido para proporcionar uma
+                experiência positiva logo no início da jornada do colaborador.
+            </p>
+
+            <p>
+                Uma excelente ferramenta para integrar novos profissionais,
+                transmitir os valores da empresa e aumentar o sentimento
+                de pertencimento desde o primeiro contato.
+            </p>
+
+            <p>
+                O conteúdo pode incluir materiais institucionais,
+                brindes personalizados, blocos de anotações, canetas,
+                cartões de boas-vindas e diversos itens adaptados
+                à identidade visual da sua organização.
+            </p>
+
+            <p>
+                Ideal para programas de onboarding, integração de equipes
+                e fortalecimento da cultura corporativa.
+            </p>
+
+        </div>
+
+        <div class="cta-kit">
+
+            <a
+                href="https://wa.me/553192352700?text=Olá! Tenho interesse no Kit Boas-Vindas e gostaria de solicitar um orçamento."
+                target="_blank"
+                class="btn-primary">
+
+                Solicitar Orçamento
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Idéias na Caixa - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+</body>
+</html>
